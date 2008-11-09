@@ -1,0 +1,9 @@
+DFSG-changes
+------------
+
+The only change made to the original tarball to become dfsg-compliant was
+removing the file
+
+rfc4217.txt
+
+because it has a non-free license.

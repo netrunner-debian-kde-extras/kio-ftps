@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+builddir/Makefile:
+	dh_testdir
+	mkdir -p builddir
+	cd builddir && cmake .. -DCMAKE_C_FLAGS="$(CFLAGS)" -DCMAKE_CXX_FLAGS="$(CXXFLAGS)" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_LD_FLAGS=-Wl,-z,defs -DCMAKE_SKIP_RPATH=ON -DCMAKE_VERBOSE_MAKEFILE=ON
+
+build: build-stamp
+build-stamp: builddir/Makefile
+	dh_testdir
+	$(MAKE) -C builddir
+	touch $@
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	rm -rf builddir
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	$(MAKE) -C builddir DESTDIR=$(CURDIR)/debian/kio-ftps install
+
+binary-indep: install
+
+binary-arch: install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs 
+	dh_installdocs
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+
+.PHONY: binary binary-arch binary-indep build clean install
