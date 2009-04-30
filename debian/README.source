@@ -1,9 +1,5 @@
-DFSG-changes
-------------
+This package uses quilt to manage all modifications to the upstream
+source.  Changes are stored in the source package as diffs in
+debian/patches and applied during the build.
 
-The only change made to the original tarball to become dfsg-compliant was
-removing the file
-
-rfc4217.txt
-
-because it has a non-free license.
+See /usr/share/doc/quilt/README.source for a detailed explanation.

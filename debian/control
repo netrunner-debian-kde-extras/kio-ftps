@@ -2,13 +2,13 @@ Source: kio-ftps
 Section: kde
 Priority: extra
 Maintainer: Laurent Léonard <laurent@open-minds.org>
-Build-Depends: cmake, debhelper (>= 7), kdelibs5-dev
-Standards-Version: 3.8.0
-Homepage: http://kasablanca.berlios.de/kio-ftps/
+Build-Depends: cdbs, cmake, debhelper (>= 7), kdelibs5-dev (>= 4:4.2.2), pkg-kde-tools (>= 0.4.2), quilt
+Standards-Version: 3.8.1
+Homepage: http://kasablanca.berlios.de/kio-ftps
 
 Package: kio-ftps
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: an ftps KIO slave for KDE 4
  An ftps KIO slave for KDE 4, based on rfc4217 and build upon the ftp KIO-slave
  sources. it should work yet with most server implementations. it issues an

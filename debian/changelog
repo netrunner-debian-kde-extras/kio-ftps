@@ -1,3 +1,30 @@
+kio-ftps (0.2+dfsg-1) unstable; urgency=low
+
+  * Switch to Quilt for patch management.
+  * Remove all *~ files.
+  * debian/control:
+    + Add cdbs, quilt and pkg-kde-tools (>= 0.4.2) as build dependencies.
+    + Make kdelibs5-dev build dependency versioned to (>= 4:4.2.2). 
+    + Add ${misc:Depends} as dependency.
+    + Fix lowercase letters starting sentences in the long description.
+    + Bump Standards-Version to 3.8.1.
+  * debian/copyright:
+    + Update to use DEP5 format specification.
+    + Add information about the removed files.
+    + Update copyright year for debian/* files.
+  * debian/rules:
+    + Update to use CDBS (kde.mk from pkg-kde-tools).
+    + Add Quilt support.
+  * debian/patches/cmakelists_kde42_fix.diff
+    + Introduce to build for KDE 4.2. (Closes: #515507)
+  * debian/README.source:
+    + Add Quilt usage.
+    + Remove DFSG-changes.
+  * debian/watch:
+    + Update for DFSG mangle.
+
+ -- Laurent Léonard <laurent@open-minds.org>  Sun, 05 Apr 2009 19:39:52 +0200
+
 kio-ftps (0.2-1) unstable; urgency=low
 
   * Initial release (Closes: #501342)
