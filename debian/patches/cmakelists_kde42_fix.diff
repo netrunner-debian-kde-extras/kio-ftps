@@ -1,10 +1,8 @@
 # Update CMakeLists.txt to build for KDE 4.2.
 
-Index: kio-ftps-0.2/CMakeLists.txt
-===================================================================
---- kio-ftps-0.2.orig/CMakeLists.txt	2009-04-19 03:01:49.000000000 +0200
-+++ kio-ftps-0.2/CMakeLists.txt	2009-04-20 01:53:06.000000000 +0200
-@@ -8,7 +8,7 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,7 +8,7 @@ set(mySources ftp.cpp)
  
  kde4_add_plugin( kio_ftps ${mySources} )
  

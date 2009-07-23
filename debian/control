@@ -3,7 +3,7 @@ Section: kde
 Priority: extra
 Maintainer: Laurent Léonard <laurent@open-minds.org>
 Build-Depends: cdbs, cmake, debhelper (>= 7), kdelibs5-dev (>= 4:4.2.2), pkg-kde-tools (>= 0.4.2), quilt
-Standards-Version: 3.8.1
+Standards-Version: 3.8.2
 Homepage: http://kasablanca.berlios.de/kio-ftps
 
 Package: kio-ftps

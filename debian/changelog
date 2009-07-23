@@ -30,4 +30,3 @@ kio-ftps (0.2-1) unstable; urgency=low
   * Initial release (Closes: #501342)
 
  -- Laurent Léonard <laurent@open-minds.org>  Sun, 12 Oct 2008 17:18:39 +0200
-
