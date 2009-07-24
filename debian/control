@@ -5,9 +5,9 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Laurent Léonard <laurent@open-minds.org>
 Build-Depends: cdbs, cmake, debhelper (>= 7), kdelibs5-dev (>= 4:4.2.2), pkg-kde-tools (>= 0.4.2), quilt
 Standards-Version: 3.8.2
+Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kio-ftps/trunk
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/kio-ftps/trunk/
 Homepage: http://kasablanca.berlios.de/kio-ftps
-Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kio-ftps
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/kio-ftps/
 
 Package: kio-ftps
 Architecture: any
