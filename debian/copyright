@@ -1,4 +1,4 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=48
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
 Name: kio-ftps
 Maintainer: Magnus Kulke <sikor_sxe@radicalapproach.de>
 Source: http://kasablanca.berlios.de/kio-ftps
