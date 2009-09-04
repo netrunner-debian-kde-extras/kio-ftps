@@ -2,6 +2,8 @@ From: =?utf-8?q?Laurent=20L=C3=A9onard?= <laurent@open-minds.org>
 Date: Fri, 4 Sep 2009 02:33:10 +0200
 Subject: [PATCH] Update CMakeLists.txt to build for KDE >= 4.2.
 
+Closes: #515507
+Thanks: Steve Stalcup
 ---
  CMakeLists.txt |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
