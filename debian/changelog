@@ -1,3 +1,15 @@
+kio-ftps (0.2+dfsg-2) unstable; urgency=low
+
+  * [e286470] Set Debian KDE Extras Team in Maintainer field and myself in
+    Uploaders field.
+  * [41a3ec6] Bump Format-Specification to DEP-5 revision 59.
+  * [d4e80f0] Bump Standards-Version to 3.8.3.
+  * [c93f66d] Remove debian/docs.
+  * [731803a] Add Vcs-* to point to the new Git repository.
+  * [5eb93c5] Update patch.
+
+ -- Laurent Léonard <laurent@open-minds.org>  Fri, 04 Sep 2009 02:41:27 +0200
+
 kio-ftps (0.2+dfsg-1) unstable; urgency=low
 
   * Switch to Quilt for patch management.
