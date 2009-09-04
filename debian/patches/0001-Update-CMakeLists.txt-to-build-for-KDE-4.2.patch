@@ -1,5 +1,13 @@
-# Update CMakeLists.txt to build for KDE 4.2.
+From: =?utf-8?q?Laurent=20L=C3=A9onard?= <laurent@open-minds.org>
+Date: Fri, 4 Sep 2009 02:33:10 +0200
+Subject: [PATCH] Update CMakeLists.txt to build for KDE >= 4.2.
 
+---
+ CMakeLists.txt |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b8d0c04..d9abaf9 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -8,7 +8,7 @@ set(mySources ftp.cpp)
@@ -11,3 +19,4 @@
  
  install(TARGETS kio_ftps  DESTINATION ${PLUGIN_INSTALL_DIR} )
  install( FILES ftps.protocol  DESTINATION  ${SERVICES_INSTALL_DIR} )
+-- 
